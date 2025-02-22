@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    background-color:rgb(84, 84, 84);
+
+}
+.main-container{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    width:auto;
+}
+li{
+    list-style: none;
+}
+h6{
+    font-weight:700;
+}
+.side-menu{
+    position: fixed;
+    background: #1d1d1d;
+    width: 10vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    color: #fff;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu li{
+    font-size: 13px;
+    font-weight:600;
+    padding: 10px 20px;
+    color: #c0b8b8;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover{
+   
+    color: #f6efef;
+}
+
+.child-container{
+    position: absolute;
+    right: 0;
+    width: 89.7vw;
+    height: 100vh;
+    background: #2B2B2B;
+    padding: 1%;
+}
+.child-container .header{ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 89.7vw;
+    height: 10vh;
+    background: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid rgb(56, 55, 55);
+ 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #c0b8b8;
+    font-size: 12px; 
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+ul li a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+.child-container .header .nav{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.child-container .header .user{
+    display: inline;
+}
+
+.child-container .inner-div{
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 89.7vw;
+    height: 10vh;
+   
+    border: 1px solid black;
+    
+}
+@media(max-width: 940px) {
+    .side-menu li,
+    a{
+        display: none;
+    }
+    .brand-name h1{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:1536px){
+    .main-container{
+        display: block;
+    }
+}
+@media(max-width:1280px){
+    .main-container{
+        display: block;
+    }
+}
+@media(max-width:1024px){
+    .main-container{
+        display: block;
+    }
+}
+@media(max-width:768px){
+    .main-container{
+        display: block;
+    }
+}
+@media(max-width:640px){
+    .main-container{
+        display: block;
+    }
+}
+@media(max-width:475px){
+    .main-container{
+        display: block;
+    }
+}
